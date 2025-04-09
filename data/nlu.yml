@@ -1,0 +1,380 @@
+---
+version: "3.1"
+
+nlu:
+- intent: saludo
+  examples: |
+    - hola
+    - buenos dias
+    - buenas tardes
+    - buenas noches
+    - que tal
+    - saludos
+    - hey
+    - como estas
+    - hola, necesito informacion
+    - buen dia
+    - un saludo
+    - hola, quisiera saber
+    - hola a todos
+    - saludos cordiales
+    - como le va
+    - como van
+    - hola, estoy interesado en sus servicios
+    - hola, me gustaria obtener informacion
+    - que tal, necesito ayuda
+    - hola equipo
+
+- intent: despedida
+  examples: |
+    - adios
+    - hasta luego
+    - nos vemos
+    - hasta pronto
+    - chao
+    - me voy
+    - gracias por la informacion, adios
+    - eso es todo, gracias
+    - debo irme
+    - hasta la proxima
+    - nos vemos pronto
+    - fue un placer
+    - gracias y hasta luego
+    - terminamos por hoy
+    - debo retirarme
+    - finalicemos la conversacion
+    - gracias por su tiempo
+    - continuamos en otro momento
+    - me despido
+    - chao, gracias por todo
+
+- intent: agradecimiento
+  examples: |
+    - gracias
+    - muchas gracias
+    - te lo agradezco
+    - genial, gracias
+    - excelente, gracias
+    - muchas gracias por la informacion
+    - gracias por tu ayuda
+    - se los agradezco
+    - muy amable
+    - gracias por su tiempo
+    - gracias por la aclaracion
+    - les agradezco su atencion
+    - gracias por la rapida respuesta
+    - muy agradecido
+    - excelente servicio, gracias
+    - gracias por explicarme
+    - gracias por su paciencia
+    - agradezco mucho su ayuda
+    - gracias por todo
+    - mil gracias
+
+- intent: consulta_odoo
+  examples: |
+    - cuentame sobre Odoo
+    - que servicios de Odoo ofrecen
+    - son partners de Odoo?
+    - implementan Odoo?
+    - que es Odoo ERP?
+    - necesito implementar Odoo en mi empresa
+    - tienen experiencia con Odoo?
+    - quiero saber mas sobre sus soluciones de Odoo
+    - como pueden ayudarme con Odoo?
+    - ofrecen personalizacion de Odoo?
+    - tienen modulos personalizados para Odoo?
+    - que ventajas tiene implementar Odoo con ustedes?
+    - hacen migracion a Odoo?
+    - puedo integrar mi sistema actual con Odoo?
+    - necesito un especialista en Odoo
+    - cuales son los beneficios de Odoo
+    - implementaciones exitosas de Odoo
+    - costo de implementar Odoo
+    - tiempo de implementacion de Odoo
+    - quiero actualizar mi version de Odoo
+    - compatibilidad de Odoo con otros sistemas
+    - que modulos de Odoo recomiendan
+    - necesito capacitacion en Odoo
+    - desarrollo a medida en Odoo
+    - integracion de Odoo con mi sitio web
+    - como migrar datos a Odoo
+
+- intent: consulta_erp
+  examples: |
+    - necesito un ERP
+    - quiero implementar un sistema ERP
+    - que ERP me recomiendan
+    - estoy buscando un sistema para mi empresa
+    - que sistemas de gestion empresarial tienen
+    - quiero automatizar los procesos de mi empresa
+    - necesito un sistema para contabilidad y finanzas
+    - busco un sistema para recursos humanos
+    - quiero un sistema para control de inventario
+    - necesito un CRM
+    - quiero un sistema para gestionar mis ventas
+    - ERP para pequenas empresas
+    - sistema integrado de gestion
+    - como elegir el mejor ERP
+    - comparacion de sistemas ERP
+    - ventajas de implementar un ERP
+    - tiempo de implementacion de un ERP
+    - costo de un sistema ERP
+    - ERP para mi industria
+    - integracion de modulos en un ERP
+    - implementacion por fases de un ERP
+    - sistema para facturacion electronica
+    - ERP en la nube o local
+    - principales caracteristicas de un buen ERP
+    - como hacer la transicion a un nuevo sistema
+
+- intent: consulta_servicios_educativos
+  examples: |
+    - que servicios tienen para escuelas
+    - servicios para universidades
+    - soluciones educativas
+    - Oohel Education
+    - sistemas para instituciones educativas
+    - gestion escolar
+    - administracion academica
+    - tienen sistema de titulacion electronica
+    - necesito un sistema para mi universidad
+    - soluciones para educacion
+    - Oohel Planner
+    - Oohel Talent
+    - educacion dual
+    - software para colegios
+    - sistema de control escolar
+    - software para administracion de universidades
+    - plataforma educativa integral
+    - automatizacion de procesos academicos
+    - sistema de inscripciones online
+    - portal para padres de familia
+    - gestion de calificaciones
+    - control de asistencia escolar
+    - plataforma de educacion a distancia
+    - sistemas para escuelas privadas
+    - software para institutos tecnicos
+    - administracion de campus universitarios
+
+- intent: consulta_hosting
+  examples: |
+    - servicios de hosting
+    - necesito un servidor
+    - alojamiento web
+    - hosting para mi sistema
+    - tienen servidores en la nube
+    - costos de hosting
+    - caracteristicas del hosting
+    - seguridad en sus servidores
+    - respaldo de datos
+    - disponibilidad de servidores
+    - migracion de datos
+    - necesito alojar mi sitio web
+    - hosting para Odoo
+    - servidores dedicados
+    - hosting compartido
+    - VPS hosting
+    - almacenamiento en la nube
+    - escalabilidad de servidores
+    - ancho de banda disponible
+    - certificados SSL
+    - tiempo de actividad garantizado
+    - politicas de respaldo
+    - hosting con soporte tecnico 24/7
+    - recuperacion ante desastres
+    - hosting especializado para aplicaciones
+    - infraestructura como servicio
+
+- intent: consulta_ia
+  examples: |
+    - inteligencia artificial
+    - servicios de IA
+    - soluciones con inteligencia artificial
+    - IA para empresas
+    - como implementar inteligencia artificial
+    - usan machine learning
+    - aplican IA en sus soluciones
+    - beneficios de la IA
+    - IA generativa
+    - procesamiento de datos con IA
+    - consultoria en IA
+    - capacitacion en inteligencia artificial
+    - chatbots inteligentes
+    - automatizacion mediante IA
+    - analisis predictivo
+    - procesamiento de lenguaje natural
+    - vision artificial
+    - big data y aprendizaje automatico
+    - como la IA puede mejorar mi negocio
+    - IA para toma de decisiones
+    - personalizacion mediante IA
+    - modelos de IA para mi industria
+    - integracion de IA en sistemas existentes
+    - analisis de sentimientos
+    - optimizacion de procesos con IA
+
+- intent: solicitar_contacto
+  examples: |
+    - como puedo contactarlos
+    - informacion de contacto
+    - quiero hablar con un asesor
+    - numero de telefono
+    - correo de contacto
+    - direccion de oficinas
+    - donde estan ubicados
+    - quiero una reunion
+    - necesito hablar con alguien
+    - formulario de contacto
+    - quiero que me llamen
+    - contacto para ventas
+    - tienen whatsapp empresarial
+    - chat en vivo
+    - horario de atencion
+    - atencion a clientes
+    - puedo visitarlos en sus oficinas
+    - contacto para soporte tecnico
+    - prefiero una videollamada
+    - agenda una llamada conmigo
+    - contacto del departamento comercial
+    - quien seria mi contacto directo
+    - reunion virtual o presencial
+    - necesito una cotizacion personalizada
+    - quiero hablar con el gerente
+
+- intent: consulta_precios
+  examples: |
+    - cuanto cuestan sus servicios
+    - precios
+    - tarifas
+    - costos de implementacion
+    - inversion necesaria
+    - cual es el precio de Odoo
+    - cuanto cuesta el hosting
+    - presupuesto para implementacion
+    - planes y precios
+    - tienen precios fijos
+    - costo mensual o anual
+    - rango de precios
+    - precio aproximado
+    - metodos de pago aceptados
+    - facilidades de pago
+    - planes para pequenas empresas
+    - descuentos por volumen
+    - costo de licencias
+    - precios de soporte tecnico
+    - costo total de propiedad
+    - precio de capacitacion
+    - planes de financiamiento
+    - retorno de inversion estimado
+    - comparativa de precios
+    - que incluye el precio
+
+- intent: solicitar_demo
+  examples: |
+    - quiero una demostracion
+    - pueden mostrarme como funciona
+    - me interesa ver una demo
+    - demostracion de Odoo
+    - demo de sus servicios educativos
+    - quiero ver como funciona antes de decidir
+    - agendemos una demo
+    - cuando pueden hacer una demostracion
+    - demo virtual
+    - quiero probar el sistema
+    - prueba gratuita
+    - demostracion personalizada
+    - funcionamiento en tiempo real
+    - prueba de concepto
+    - pueden mostrarme un caso similar al mio
+    - demostracion de las principales funciones
+    - como seria una implementacion para mi negocio
+    - me gustaria ver ejemplos reales
+    - disponibilidad para demos
+    - demostracion a mi equipo
+    - que necesito para la demo
+    - duracion de la demostracion
+    - demostracion en mis instalaciones
+    - version de prueba
+
+- intent: preguntar_por_soporte
+  examples: |
+    - como es su servicio de soporte
+    - tienen soporte tecnico
+    - horarios de soporte
+    - tiempo de respuesta
+    - como reportar un problema
+    - soporte incluido
+    - capacitacion de usuarios
+    - documentacion disponible
+    - tienen un manual de usuario
+    - dan seguimiento post-implementacion
+    - soporte 24/7
+    - niveles de servicio
+    - soporte via telefono
+    - soporte por correo electronico
+    - chat de soporte
+    - sistema de tickets
+    - tienen un portal de ayuda
+    - soporte en sitio
+    - tiempo promedio de resolucion
+    - actualizaciones y mantenimiento
+    - soporte preventivo
+    - monitoreo de sistemas
+    - capacitacion continua
+    - garantia del servicio
+    - costo adicional por soporte
+
+- intent: preguntar_experiencia
+  examples: |
+    - cuanta experiencia tienen
+    - desde cuando existen
+    - casos de exito
+    - referencias de clientes
+    - han trabajado con empresas similares
+    - cuantos proyectos han realizado
+    - experiencia en mi sector
+    - trayectoria de la empresa
+    - credenciales
+    - anos en el mercado
+    - equipo de profesionales
+    - cuantos clientes tienen
+    - portafolio de proyectos
+    - certificaciones del equipo
+    - experiencia con implementaciones complejas
+    - historias de exito
+    - tiempo promedio por proyecto
+    - perfiles de su equipo tecnico
+    - metodologia de trabajo
+    - proyectos internacionales
+    - premios o reconocimientos
+    - especializacion por industria
+    - formacion y capacitacion continua
+    - alianzas estrategicas
+
+- intent: consulta_clientes
+  examples: |
+    - quienes son sus clientes
+    - con que empresas han trabajado
+    - clientes principales
+    - cartera de clientes
+    - tienen clientes en mi industria
+    - empresas que confian en ustedes
+    - testimonios de clientes
+    - casos de exito con clientes
+    - pueden compartir referencias
+    - clientes mas importantes
+    - han trabajado con competidores mios
+    - clientes satisfechos
+    - quienes son sus clientes mas antiguos
+    - sectores donde tienen mas presencia
+    - companias que utilizan sus servicios
+    - ejemplos de implementaciones exitosas
+    - empresas de mi tamano que trabajan con ustedes
+    - perfil de sus clientes
+    - clientes nacionales e internacionales
+    - resultados obtenidos por sus clientes
+    - tienen algun caso similar a mi empresa
+    - clientes en mi region
+    - politica de confidencialidad con clientes
+    - como han ayudado a sus clientes a crecer

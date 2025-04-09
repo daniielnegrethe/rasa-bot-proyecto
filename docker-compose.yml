@@ -1,0 +1,7 @@
+version: '3'
+services:
+  rasa:
+    image: geovanioohel/asistente-rasa-final:latest
+    ports:
+      - "5005:5005"
+    command: rasa run --enable-api --cors "*" --model /app/models

@@ -1,0 +1,94 @@
+version: "3.1"
+
+intents:
+  - saludo
+  - despedida
+  - agradecimiento
+  - consulta_odoo
+  - consulta_erp
+  - consulta_servicios_educativos
+  - consulta_hosting
+  - consulta_ia
+  - solicitar_contacto
+  - consulta_precios
+  - solicitar_demo
+  - preguntar_por_soporte
+  - preguntar_experiencia
+  - consulta_clientes
+  - nlu_fallback
+
+entities:
+  - servicio
+  - producto
+  - sector
+
+slots:
+  servicio:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: servicio
+  producto:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: producto
+  sector:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: sector
+
+responses:
+  utter_saludo:
+    - text: "¡Hola! Soy el asistente virtual de Oohel Technologies. ¿En qué puedo ayudarte hoy? Puedo informarte sobre nuestras soluciones basadas en Odoo, servicios educativos, IA para empresas o hosting."
+    - text: "¡Bienvenido a Oohel Technologies! Soy tu asistente virtual, ¿cómo puedo ayudarte? Contamos con soluciones en Odoo ERP, educación, hosting e inteligencia artificial."
+
+  utter_despedida:
+    - text: "¡Gracias por contactar con Oohel Technologies! Si necesitas más información, no dudes en volver a consultarme."
+    - text: "¡Hasta pronto! Recuerda que estamos para apoyarte en tu transformación digital."
+
+  utter_agradecimiento:
+    - text: "¡De nada! Estamos para ayudarte."
+    - text: "Es un placer poder asistirte. ¿Hay algo más en lo que pueda ayudarte?"
+
+  utter_info_odoo:
+    - text: "En Oohel Technologies somos partner oficial de Odoo. Ofrecemos implementación, personalización y soporte para Odoo ERP. Contamos con más de 10 años de experiencia y hemos trabajado con más de 20 clientes en sectores como educación, salud y gobierno. ¿Te gustaría saber algo específico sobre nuestras soluciones Odoo?"
+
+  utter_info_servicios_educativos:
+    - text: "Nuestra plataforma Oohel Education está transformando la gestión de instituciones educativas en México. Ofrecemos soluciones como Oohel Planner (gestión escolar), titulación electrónica, Oohel Talent (vinculación) y modelo dual. Actualmente tenemos presencia en más de 20 universidades en 8 estados de la república. ¿Te interesa conocer más sobre alguna solución específica?"
+
+  utter_info_hosting:
+    - text: "Nuestros servicios de hosting son confiables y seguros, ideales para impulsar tu organización. Ofrecemos optimización de gastos, mejora de rendimiento, soporte prioritario, respaldos de datos, disponibilidad 24/7, seguridad reforzada, certificado SSL y actualizaciones automáticas."
+
+  utter_info_ia:
+    - text: "En Oohel Technologies ayudamos a empresas, gobierno y educación a adoptar la IA para mejorar eficiencia, productividad y experiencia del cliente. Somos partner del Centro de Innovación Industrial en Inteligencia Artificial (CII.IA) y ofrecemos servicios de consultoría, capacitación y desarrollo de prototipos. Nuestras soluciones incluyen IA generativa, realidad virtual, ciencia de datos y robótica."
+
+  utter_solicitar_contacto:
+    - text: "Para contactarnos puedes enviarnos un correo a info@oohel.net o llamar al 222 966 8337. También puedes llenar el formulario en nuestra página web: https://oohel.net/contactus. ¿Hay algo específico en lo que podamos ayudarte?"
+
+  utter_info_precios:
+    - text: "Los precios de nuestros servicios varían según tus necesidades específicas. Para darte un presupuesto personalizado, necesitaríamos conocer más detalles sobre tu proyecto. ¿Te gustaría que un asesor se ponga en contacto contigo para discutir tu caso particular?"
+
+  utter_solicitar_demo:
+    - text: "¡Con gusto! Para agendar una demostración de nuestros servicios, necesitamos algunos datos. Por favor, escríbenos a info@oohel.net o llena el formulario en nuestra página web mencionando que deseas una demo. Un asesor se pondrá en contacto contigo lo más pronto posible."
+
+  utter_info_soporte:
+    - text: "Nuestro equipo de soporte técnico está disponible para resolver cualquier duda o problema que puedas tener con nuestros servicios. Contamos con consultores especializados que te brindarán atención personalizada. ¿Tienes alguna consulta específica sobre nuestro soporte?"
+
+  utter_info_experiencia:
+    - text: "Oohel Technologies cuenta con más de 10 años de experiencia en el mercado. Hemos trabajado con empresas como Dentalia, APAC y Refinesa, así como con numerosas instituciones educativas y entidades gubernamentales. Algunos de nuestros casos de éxito incluyen la transformación digital de Dentalia con Odoo y la implementación de sistemas de gestión académica en más de 20 universidades en México."
+
+  utter_info_clientes:
+    - text: "Entre nuestros clientes destacados se encuentran Dentalia, APAC, Refinesa, diversas universidades tecnológicas y politécnicas de México, así como entidades gubernamentales como el Gobierno de Durango y el Municipio de Puebla. ¿Te gustaría conocer algún caso de éxito específico?"
+
+  utter_default:
+    - text: "Lo siento, no he entendido completamente tu consulta. ¿Podrías reformularla? Puedo ayudarte con información sobre nuestras soluciones Odoo, servicios educativos, hosting e inteligencia artificial."
+
+# Esta es la sección que necesitas añadir
+actions:
+  - action_busqueda_conocimiento
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

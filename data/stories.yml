@@ -1,0 +1,67 @@
+version: "3.1"
+
+stories:
+- story: saludo y despedida simple
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: despedida
+  - action: utter_despedida
+
+- story: consulta sobre Odoo
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: consulta_odoo
+  - action: utter_info_odoo
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+
+- story: consulta sobre servicios educativos
+  steps:
+  - intent: saludo
+  - action: utter_saludo
+  - intent: consulta_servicios_educativos
+  - action: utter_info_servicios_educativos
+  - intent: agradecimiento
+  - action: utter_agradecimiento
+
+- story: consulta sobre hosting
+  steps:
+  - intent: consulta_hosting
+  - action: utter_info_hosting
+
+- story: consulta sobre IA
+  steps:
+  - intent: consulta_ia
+  - action: utter_info_ia
+
+- story: solicitud de contacto
+  steps:
+  - intent: solicitar_contacto
+  - action: utter_solicitar_contacto
+
+- story: consulta de precios
+  steps:
+  - intent: consulta_precios
+  - action: utter_info_precios
+
+- story: solicitud de demo
+  steps:
+  - intent: solicitar_demo
+  - action: utter_solicitar_demo
+
+- story: pregunta sobre soporte
+  steps:
+  - intent: preguntar_por_soporte
+  - action: utter_info_soporte
+
+- story: pregunta sobre experiencia
+  steps:
+  - intent: preguntar_experiencia
+  - action: utter_info_experiencia
+
+- story: consulta sobre clientes
+  steps:
+  - intent: consulta_clientes
+  - action: utter_info_clientes

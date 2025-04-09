@@ -1,0 +1,73 @@
+version: "3.1"
+
+rules:
+  - rule: Saludar siempre
+    steps:
+    - intent: saludo
+    - action: utter_saludo
+
+  - rule: Despedirse siempre
+    steps:
+    - intent: despedida
+    - action: utter_despedida
+
+  - rule: Agradecer siempre
+    steps:
+    - intent: agradecimiento
+    - action: utter_agradecimiento
+
+  - rule: Consulta sobre Odoo
+    steps:
+    - intent: consulta_odoo
+    - action: utter_info_odoo
+
+  - rule: Consulta sobre servicios educativos
+    steps:
+    - intent: consulta_servicios_educativos
+    - action: utter_info_servicios_educativos
+
+  - rule: Consulta sobre hosting
+    steps:
+    - intent: consulta_hosting
+    - action: utter_info_hosting
+
+  - rule: Consulta sobre IA
+    steps:
+    - intent: consulta_ia
+    - action: utter_info_ia
+
+  - rule: Solicitar contacto
+    steps:
+    - intent: solicitar_contacto
+    - action: utter_solicitar_contacto
+
+  - rule: Consulta de precios
+    steps:
+    - intent: consulta_precios
+    - action: utter_info_precios
+
+  - rule: Solicitar demo
+    steps:
+    - intent: solicitar_demo
+    - action: utter_solicitar_demo
+
+  - rule: Preguntar por soporte
+    steps:
+    - intent: preguntar_por_soporte
+    - action: utter_info_soporte
+
+  - rule: Preguntar por experiencia
+    steps:
+    - intent: preguntar_experiencia
+    - action: utter_info_experiencia
+
+  - rule: Consultar clientes
+    steps:
+    - intent: consulta_clientes
+    - action: utter_info_clientes
+
+  # Esta es la regla para usar la base de conocimiento cuando no hay coincidencia con intenciones normales
+  - rule: Buscar en base de conocimiento ante fallback
+    steps:
+    - intent: nlu_fallback
+    - action: action_busqueda_conocimiento

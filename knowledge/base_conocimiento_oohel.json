@@ -1,0 +1,114 @@
+[
+  {
+    "pregunta": "¿Cuál es el nombre de la empresa?",
+    "respuesta": "Oohel Technologies SA de CV"
+  },
+  {
+    "pregunta": "¿Dónde está ubicada la empresa?",
+    "respuesta": "La empresa está ubicada en Puebla, Puebla."
+  },
+  {
+    "pregunta": "¿Cuál es el teléfono de contacto?",
+    "respuesta": "El teléfono de contacto es 222 966 8337."
+  },
+  {
+    "pregunta": "¿Cuál es el numero de teléfono?",
+    "respuesta": "El teléfono de contacto es 222 966 8337."
+  },
+  {
+    "pregunta": "¿Cuál es el correo electrónico de la empresa?",
+    "respuesta": "El correo electrónico es info@oohel.net."
+  },
+  {
+    "pregunta": "¿Cuál es el sitio web de la empresa?",
+    "respuesta": "El sitio web es https://oohel.net/."
+  },
+  {
+    "pregunta": "¿Cuál es el pagina web de la empresa?",
+    "respuesta": "El sitio web es https://oohel.net/."
+  },
+  {
+    "pregunta": "¿Qué servicios de Odoo ofrece la empresa?",
+    "respuesta": "Ofrecemos soluciones basadas en Odoo para empresas, sector educativo y gobierno. Nuestros servicios incluyen consultoría financiera, integración de IA en Odoo, personalización y desarrollo de módulos, migración de datos y soporte post implementación."
+  },
+  {
+    "pregunta": "¿Qué servicios educativos ofrece la empresa?",
+    "respuesta": "Ofrecemos plataformas para gestión educativa: académica, administrativa, financiera y vinculación. Estas incluyen Oohel Planner, Titulación Electrónica, Oohel Talent, Modelo Dual, Oohel Colabora e Indicadores MECASUP, 911, entre otros."
+  },
+  {
+    "pregunta": "¿Qué servicios de hosting ofrece la empresa?",
+    "respuesta": "Ofrecemos hosting seguro y optimizado para instituciones y empresas. Características: optimización de gastos, soporte prioritario, respaldo de datos diario, disponibilidad 24/7, certificado SSL y actualizaciones automáticas."
+  },
+  {
+    "pregunta": "¿Qué soluciones de inteligencia artificial ofrece la empresa?",
+    "respuesta": "Ofrecemos soluciones de IA para empresas, gobierno y educación, incluyendo consultoría, capacitación, prototipos, IA generativa, video vigilancia inteligente y reconocimiento facial."
+  },
+  {
+    "pregunta": "¿Cuáles son las alianzas de la empresa?",
+    "respuesta": "Somos partner oficial de Odoo, tenemos alianzas con Oracle (Govtech y Oracle Cloud), el Centro de Innovación Industrial en IA y diversas universidades en México."
+  },
+  {
+    "pregunta": "¿Cuáles son los proyectos destacados de la empresa?",
+    "respuesta": "Entre nuestros proyectos destacados están Dentalia (transformación digital con Odoo, integrando 6 empresas, más de 22 módulos estándar y 27 desarrollos propios), Gobierno de Durango (vinculación de egresados con empresas mediante plataforma Oohel Talent) e ITSH Puebla (ERP con más de 20 procesos automatizados para gestión educativa pública con Odoo)."
+  },
+  {
+    "pregunta": "¿Cuáles son los valores de la empresa?",
+    "respuesta": "Nuestros valores son: Resultados, Calidad, Compromiso y Trabajo en equipo."
+  },
+  {
+    "pregunta": "¿Cuál es la visión de la empresa?",
+    "respuesta": "Nuestra visión es el liderazgo por talento y tecnología para impulsar la transformación digital con soluciones tecnológicas adaptadas y creativas."
+  },
+  {
+    "pregunta": "¿Cuánta experiencia tiene la empresa?",
+    "respuesta": "Contamos con 20 años de experiencia, presencia en 8 estados, vinculación con 20 universidades y una base de datos con 25,000 estudiantes y 7,000 profesores."
+  },
+  {
+    "pregunta": "¿Quiénes son sus clientes?",
+    "respuesta": "Entre nuestros clientes destacados se encuentran Dentalia, Gobierno de Durango, ITSH Puebla, entre otros."
+  },
+  {
+    "pregunta": "¿Me puedes dar información general sobre la empresa?",
+    "respuesta": "Oohel Technologies es una empresa con 20 años de experiencia especializada en soluciones Odoo, plataformas educativas, hosting e inteligencia artificial. Ubicada en Puebla, somos partner oficial de Odoo y Oracle, con presencia en 8 estados y colaboración con 20 universidades."
+  },
+  {
+    "pregunta": "¿A qué se dedica Oohel?",
+    "respuesta": "Oohel Technologies se dedica a ofrecer soluciones tecnológicas en educación, inteligencia artificial, hosting y Odoo ERP."
+  },
+  {
+    "pregunta": "¿Qué tipo de empresa es Oohel?",
+    "respuesta": "Oohel Technologies es una empresa especializada en transformación digital, desarrollando soluciones de software y plataformas tecnológicas."
+  },
+  {
+    "pregunta": "¿Qué hace Oohel?",
+    "respuesta": "Oohel ofrece servicios de implementación de Odoo, plataformas educativas, hosting empresarial y soluciones con inteligencia artificial."
+  },
+  {
+    "pregunta": "¿Cuál es el giro de la empresa Oohel?",
+    "respuesta": "El giro de Oohel es tecnológico, enfocándose en el desarrollo de soluciones para instituciones educativas, gobiernos y empresas privadas."
+  },
+  {
+    "pregunta": "¿Pueden ayudarme con soluciones en educación?",
+    "respuesta": "Claro, contamos con soluciones para gestión escolar, titulación, vinculación y más, bajo nuestra plataforma Oohel Education."
+  },
+  {
+    "pregunta": "¿Ofrecen inteligencia artificial para empresas?",
+    "respuesta": "Sí, ofrecemos desde consultoría y capacitación hasta desarrollo de prototipos de IA, incluyendo IA generativa y visión por computadora."
+  },
+  {
+    "pregunta": "¿Dónde los puedo contactar?",
+    "respuesta": "Puedes escribirnos a info@oohel.net o llamarnos al 222 966 8337. También puedes llenar el formulario en https://oohel.net/contactus."
+  },
+  {
+    "pregunta": "¿Dan soporte técnico?",
+    "respuesta": "Sí, contamos con soporte técnico especializado en todas nuestras soluciones. Nuestro equipo puede ayudarte a resolver cualquier incidencia."
+  },
+  {
+    "pregunta": "¿Qué experiencia tienen trabajando con Odoo?",
+    "respuesta": "Tenemos más de 10 años implementando soluciones con Odoo ERP, con más de 27 desarrollos propios y 6 empresas integradas en un solo sistema."
+  },
+  {
+    "pregunta": "¿Cómo ayudan a universidades?",
+    "respuesta": "Ofrecemos herramientas como Oohel Planner, Talent, Titulación Electrónica y más, adaptadas a la gestión académica y administrativa de universidades."
+  }
+]
