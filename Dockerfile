@@ -8,10 +8,8 @@ RUN apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/*
 
 # Instalar Rasa
-RUN pip install --no-cache-dir \
-    rasa==3.6.2 \
-    transformers \
-    huggingface_hub
+COPY requirements.txt ./
+RUN pip install --no-cache-dir -r requirements.txt
 
 # Copiar proyecto
 COPY . .
