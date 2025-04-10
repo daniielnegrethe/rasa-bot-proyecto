@@ -7,15 +7,18 @@ RUN apt-get update && apt-get install -y \
     build-essential \
     && rm -rf /var/lib/apt/lists/*
 
-# Instalar Rasa
+# Copiar archivos de requirements e instalar dependencias de Python
 COPY requirements.txt ./
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copiar proyecto
+# Copiar el resto del proyecto
 COPY . .
 
-# Puerto para Rasa API
+# Entrenar el modelo automáticamente
+RUN rasa train
+
+# Puerto para la API de Rasa
 EXPOSE 5005
 
-# Comando sin el argumento --host que causa problemas
+# Ejecutar el servidor de Rasa
 CMD ["rasa", "run", "--enable-api", "--cors", "*", "--model", "/app/models"]
