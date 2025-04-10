@@ -3,7 +3,7 @@ rasa==3.6.2
 rasa-sdk==3.6.1
 sentence-transformers==2.2.2
 scikit-learn==1.0.2
-numpy==1.21.6
+numpy==1.23.5
 
 # Dependencias adicionales recomendadas para un proyecto Rasa
 requests==2.25.1
